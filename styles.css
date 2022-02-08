@@ -15,12 +15,13 @@ html {
     overflow-x:hidden;
 }
 #name{
-    width: 800px;
-    height: 350px;
+    width: 500px;
+    height: 250px;
     margin: auto;
     color: rgb(255, 255, 255);
-    margin-top: 15vh;
+    margin-top: 20vh;
     padding-top:30px;
+    padding-bottom:30px;
     background-color: rgba(255, 255, 255, 0.377);
     border-radius: 6px;
     -webkit-animation: fadein 1s linear;
@@ -49,7 +50,7 @@ nav{
     font-size: 20px;
 }
 h1{
-    font-size: 90px;
+    font-size: 70px;
 }
 h2{
     font-size: 50px;
@@ -147,18 +148,18 @@ a{
 a>img{
     margin: 10px;
     transition: 0.25s;
-    width:6em;
-    height:6em;
+    width:3em;
+    height:3em;
 }
 img:hover{
     transition: 0.25s;
-    width:7em;
-    height:7em;
+    width:4em;
+    height:4em;
 }
 #down_arrow{
     margin-top: 5%;
-    width:5em;
-    height: 3em;
+    width:3em;
+    height: 2em;
     -webkit-animation: fadein 1s linear;
     animation: fadein 1s linear;
 }
@@ -309,7 +310,7 @@ li a:hover{
         font-size:4vw;
     }
 }
-@media only screen and (min-width : 501px) and (max-height : 750px){
+@media only screen and (min-width : 501px) and (max-height : 550px){
     #images{
         display: none;
     }
