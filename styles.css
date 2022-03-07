@@ -329,12 +329,6 @@ img:nth-child(6){animation-delay:15s;}
     body{
         animation: none;
     }
-    .slideshow{
-        display: none;
-    }
-    .photo{
-        animation: none;
-    }
     li>a{
         font-size: 0.7em;
         margin-left: 1em;
