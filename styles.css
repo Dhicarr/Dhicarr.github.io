@@ -328,6 +328,7 @@ img:nth-child(6){animation-delay:15s;}
 @media only screen and (max-width : 500px){
     body{
         animation: none;
+        background: #19b6ff;
     }
     li>a{
         font-size: 0.7em;
