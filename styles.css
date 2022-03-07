@@ -54,6 +54,12 @@ h1{
 }
 h2{
     font-size: 50px;
+    outline-color:rgb(165, 165, 165);
+    outline-style: solid;
+    width: fit-content;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    padding: 0.25em;
 }
 p{
     font-size: 25px;
@@ -61,10 +67,21 @@ p{
 h4{
     font-size: 30px;
 }
-.content{
-    outline-color:rgb(221, 221, 221);
+#about_content{
+    flex: 1 1 auto;
+    outline-color:rgb(165, 165, 165);
     outline-style: solid;
-    padding: 3em;
+    padding: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    border-radius: 8px;
+}
+#skills_content{
+    outline-color:rgb(165, 165, 165);
+    outline-style: solid;
+    padding: 4em;
+    margin-top: 2em;
     border-radius: 8px;
 }
 #about{
@@ -133,13 +150,33 @@ h4{
     background-color: rgb(230, 230, 230);
     color: rgb(116, 116, 116);
 }
+#extra_projects{
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    margin-top: 0px;
+    width: auto;
+    background-color: rgb(211, 211, 211);
+    color: rgb(116, 116, 116);
+}
+#extra_projects2{
+    outline-color:rgb(165, 165, 165);
+    outline-style: solid;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 8px;
+}
 #extra{
     padding: 2%;
     margin-bottom: 0;
     width: auto;
     text-align: center;
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(189, 189, 189);
     color: rgb(116, 116, 116);
+}
+#about2{
+    display:flex;
 }
 a{
     text-decoration: none;
@@ -151,10 +188,19 @@ a>img{
     width:3em;
     height:3em;
 }
-img:hover{
+#images>a>img:hover{
     transition: 0.25s;
     width:4em;
     height:4em;
+}
+#headphoto{
+    flex: 0 0 auto;
+    margin-right: 3em;
+}
+#headphoto>img{
+    width:10em;
+    height:10em;
+    border-radius: 50%;
 }
 #down_arrow{
     margin-top: 5%;
@@ -174,7 +220,7 @@ img:hover{
     margin:0px;
     z-index: 100;
 }
-ul {
+nav>ul {
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
@@ -184,10 +230,10 @@ ul {
     overflow: hidden;
     background-color: rgb(255, 255, 255);
 }
-li {
+nav>ul>li {
     float: left;
 }
-li a {
+nav>ul>li a {
     display: block;
     color: rgb(116, 116, 116);
     font-family: 'Open Sans', sans-serif;
@@ -195,10 +241,63 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover{
+nav>ul>li a:hover{
     transition: 0.5s;
     background-color: rgb(221, 221, 221);
 }
+#extra_projects2>a {
+    display: block;
+    color: rgb(116, 116, 116);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+}
+#sqlproject, #tankwebsite{
+    border-bottom: 5px solid rgb(165, 165, 165);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#copit{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.slideshow{
+    width:12em;
+    height:25em;
+    overflow:hidden;
+}
+.photo{
+    position:absolute;
+    animation: round 18s infinite;
+    -webkit-animation:round 18s infinite;
+    opacity:0;
+    width:11em;
+    height:20em;
+    object-fit: fill;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 1em;
+}
+img:nth-child(1){-webkit-animation-delay:0s;}
+img:nth-child(1){animation-delay:0s;}
+img:nth-child(2){-webkit-animation-delay:3s;}
+img:nth-child(2){animation-delay:3s;}
+img:nth-child(3){-webkit-animation-delay:6s;}
+img:nth-child(3){animation-delay:6s;}
+img:nth-child(4){-webkit-animation-delay:9s;}
+img:nth-child(4){animation-delay:9s;}
+img:nth-child(5){-webkit-animation-delay:12s;}
+img:nth-child(5){animation-delay:12s;}
+img:nth-child(6){-webkit-animation-delay:15s;}
+img:nth-child(6){animation-delay:15s;}
+@-webkit-keyframes round{   
+    25%{opacity:1;}
+    40%{opacity:0;}
+} 
+@keyframes round{   
+    25%{opacity:1;}
+    40%{opacity:0;}
+}
+
 @-webkit-keyframes fadein {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -228,10 +327,19 @@ li a:hover{
 }
 /*For Phones*/
 @media only screen and (max-width : 500px){
-    .content{
+    #skills_content{
         padding: 0vw;
         margin-bottom: 3vw;
         outline-style: none;
+    }
+    #sqlproject,#tankwebsite,#copit{
+        font-size: 2vw;
+    }
+    #extra,#extra_projects2{
+        font-size: 5vw;
+    }
+    #about2{
+        display:block;
     }
     #skills{
         padding-left: 10%;
