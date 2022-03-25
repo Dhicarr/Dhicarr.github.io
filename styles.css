@@ -277,8 +277,8 @@ nav>ul>li a:hover{
     border-radius: 1em;
 }
 .slideshow2{
-    width:31vw;
-    height:16vw;
+    width:31em;
+    height:16em;
     overflow:hidden;
 }
 .photo2{
@@ -286,8 +286,8 @@ nav>ul>li a:hover{
     animation: round 10s infinite;
     -webkit-animation:round 10s infinite;
     opacity:0;
-    width:30vw;
-    height:15vw;
+    width:30em;
+    height:15em;
     object-fit: fill;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 1em;
