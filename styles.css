@@ -356,7 +356,7 @@ img:nth-child(6){animation-delay:15s;}
         margin-bottom: 1em;
         outline-style: none;
     }
-    #sqlproject,#tankwebsite,#copit{
+    #sqlproject, #tankwebsite, #copit, #personalwebsite, #weatherapp{
         font-size: 0.4em;
     }
     #extra,#extra_projects2{
