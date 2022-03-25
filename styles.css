@@ -251,7 +251,7 @@ nav>ul>li a:hover{
     font-size: 2em;
     text-decoration: none;
 }
-#sqlproject, #tankwebsite{
+#sqlproject, #tankwebsite, #weatherapp, #personalwebsite{
     border-bottom: 5px solid rgb(165, 165, 165);
     padding-top: 1em;
     padding-bottom: 1em;
@@ -276,6 +276,23 @@ nav>ul>li a:hover{
     border: 5px solid rgb(255, 255, 255);
     border-radius: 1em;
 }
+.slideshow2{
+    width:31vw;
+    height:16vw;
+    overflow:hidden;
+}
+.photo2{
+    position:absolute;
+    animation: round 10s infinite;
+    -webkit-animation:round 10s infinite;
+    opacity:0;
+    width:30vw;
+    height:15vw;
+    object-fit: fill;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 1em;
+}
+
 img:nth-child(1){-webkit-animation-delay:0s;}
 img:nth-child(1){animation-delay:0s;}
 img:nth-child(2){-webkit-animation-delay:3s;}
