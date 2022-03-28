@@ -67,6 +67,11 @@ p{
 h4{
     font-size: 30px;
 }
+#headphoto>img{
+    border-style: solid;
+    border-color: rgb(165, 165, 165);
+    border-width: 0.25em;
+}
 #about_content{
     flex: 1 1 auto;
     outline-color:rgb(165, 165, 165);
@@ -139,6 +144,10 @@ h4{
 #skill8>img{
     width:8em;
     height:11em;
+}
+#skill9>img{
+    width: 9em;
+    height:8em;
 }
 #projects{
     padding-top: 1%;
@@ -222,8 +231,6 @@ a>img{
 }
 nav>ul {
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.2);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
     list-style-type: none;
     margin: 0;
     overflow: hidden;
@@ -286,7 +293,7 @@ nav>ul>li a:hover{
     animation: round 10s infinite;
     -webkit-animation:round 10s infinite;
     opacity:0;
-    width:30em;
+    width:32em;
     height:15em;
     object-fit: fill;
     border: 5px solid rgb(255, 255, 255);
@@ -349,7 +356,11 @@ img:nth-child(6){animation-delay:15s;}
     }
     li>a{
         font-size: 0.7em;
-        margin-left: 1em;
+        margin-left: 0em;
+    }
+    .slideshow2{
+        width:31em;
+        height:20em;
     }
     #skills_content{
         padding: 0em;
