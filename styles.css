@@ -224,7 +224,7 @@ a>img{
 }
 #navigation{
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100vw;
     margin:0px;
     z-index: 100;
@@ -290,8 +290,8 @@ nav>ul>li a:hover{
 }
 .photo2{
     position:absolute;
-    animation: round 10s infinite;
-    -webkit-animation:round 10s infinite;
+    animation: round 12s infinite;
+    -webkit-animation:round 12s infinite;
     opacity:0;
     width:32em;
     height:15em;
@@ -299,22 +299,30 @@ nav>ul>li a:hover{
     border: 5px solid rgb(255, 255, 255);
     border-radius: 1em;
 }
+.slideshow2>img:nth-child(1){-webkit-animation-delay:0s;}
+.slideshow2>img:nth-child(1){animation-delay:0s;}
+.slideshow2>img:nth-child(2){-webkit-animation-delay:3s;}
+.slideshow2>img:nth-child(2){animation-delay:3s;}
+.slideshow2>img:nth-child(3){-webkit-animation-delay:6s;}
+.slideshow2>img:nth-child(3){animation-delay:6s;}
+.slideshow2>img:nth-child(4){-webkit-animation-delay:9s;}
+.slideshow2>img:nth-child(4){animation-delay:9s;}
 
-img:nth-child(1){-webkit-animation-delay:0s;}
-img:nth-child(1){animation-delay:0s;}
-img:nth-child(2){-webkit-animation-delay:3s;}
-img:nth-child(2){animation-delay:3s;}
-img:nth-child(3){-webkit-animation-delay:6s;}
-img:nth-child(3){animation-delay:6s;}
-img:nth-child(4){-webkit-animation-delay:9s;}
-img:nth-child(4){animation-delay:9s;}
-img:nth-child(5){-webkit-animation-delay:12s;}
-img:nth-child(5){animation-delay:12s;}
-img:nth-child(6){-webkit-animation-delay:15s;}
-img:nth-child(6){animation-delay:15s;}
+.slideshow>img:nth-child(1){-webkit-animation-delay:0s;}
+.slideshow>img:nth-child(1){animation-delay:0s;}
+.slideshow>img:nth-child(2){-webkit-animation-delay:3s;}
+.slideshow>img:nth-child(2){animation-delay:3s;}
+.slideshow>img:nth-child(3){-webkit-animation-delay:6s;}
+.slideshow>img:nth-child(3){animation-delay:6s;}
+.slideshow>img:nth-child(4){-webkit-animation-delay:9s;}
+.slideshow>img:nth-child(4){animation-delay:9s;}
+.slideshow>img:nth-child(5){-webkit-animation-delay:12s;}
+.slideshow>img:nth-child(5){animation-delay:12s;}
+.slideshow>img:nth-child(6){-webkit-animation-delay:15s;}
+.slideshow>img:nth-child(6){animation-delay:15s;}
 @-webkit-keyframes round{   
     25%{opacity:1;}
-    40%{opacity:0;}
+    35%{opacity:0;}
 } 
 @keyframes round{   
     25%{opacity:1;}
