@@ -258,7 +258,7 @@ nav>ul>li a:hover{
     font-size: 2em;
     text-decoration: none;
 }
-#sqlproject, #tankwebsite, #weatherapp, #personalwebsite{
+#sqlproject, #tankwebsite, #weatherapp, #personalwebsite, #studentprofile{
     border-bottom: 5px solid rgb(165, 165, 165);
     padding-top: 1em;
     padding-bottom: 1em;
@@ -375,7 +375,7 @@ nav>ul>li a:hover{
         margin-bottom: 1em;
         outline-style: none;
     }
-    #sqlproject, #tankwebsite, #copit, #personalwebsite, #weatherapp{
+    #sqlproject, #tankwebsite, #copit, #personalwebsite, #weatherapp, #studentprofile{
         font-size: 0.4em;
     }
     #extra,#extra_projects2{
