@@ -258,7 +258,7 @@ nav>ul>li a:hover{
     font-size: 2em;
     text-decoration: none;
 }
-#sqlproject, #tankwebsite, #weatherapp, #personalwebsite, #studentprofile{
+#sqlproject, #tankwebsite, #weatherapp, #personalwebsite, #studentprofile, #hatchways{
     border-bottom: 5px solid rgb(165, 165, 165);
     padding-top: 1em;
     padding-bottom: 1em;
@@ -283,10 +283,27 @@ nav>ul>li a:hover{
     border: 5px solid rgb(255, 255, 255);
     border-radius: 1em;
 }
-.slideshow2{
+.slideshow3{
     width:31em;
-    height:16em;
+    height:31em;
     overflow:hidden;
+    background-color: white;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 1em;
+}
+.slideshow2{
+    width:32em;
+    height:15em;
+    overflow:hidden;
+}
+.photo3{
+    position:absolute;
+    animation: round 15s infinite;
+    -webkit-animation:round 15s infinite;
+    opacity:0;
+    width:30em;
+    height:30em;
+    object-fit: contain;
 }
 .photo2{
     position:absolute;
@@ -320,6 +337,18 @@ nav>ul>li a:hover{
 .slideshow>img:nth-child(5){animation-delay:12s;}
 .slideshow>img:nth-child(6){-webkit-animation-delay:15s;}
 .slideshow>img:nth-child(6){animation-delay:15s;}
+
+.slideshow3>img:nth-child(1){-webkit-animation-delay:0s;}
+.slideshow3>img:nth-child(1){animation-delay:0s;}
+.slideshow3>img:nth-child(2){-webkit-animation-delay:3s;}
+.slideshow3>img:nth-child(2){animation-delay:3s;}
+.slideshow3>img:nth-child(3){-webkit-animation-delay:6s;}
+.slideshow3>img:nth-child(3){animation-delay:6s;}
+.slideshow3>img:nth-child(4){-webkit-animation-delay:9s;}
+.slideshow3>img:nth-child(4){animation-delay:9s;}
+.slideshow3>img:nth-child(5){-webkit-animation-delay:12s;}
+.slideshow3>img:nth-child(5){animation-delay:12s;}
+
 @-webkit-keyframes round{   
     25%{opacity:1;}
     35%{opacity:0;}
@@ -375,7 +404,7 @@ nav>ul>li a:hover{
         margin-bottom: 1em;
         outline-style: none;
     }
-    #sqlproject, #tankwebsite, #copit, #personalwebsite, #weatherapp, #studentprofile{
+    #sqlproject, #tankwebsite, #copit, #personalwebsite, #weatherapp, #studentprofile, #hatchways{
         font-size: 0.4em;
     }
     #extra,#extra_projects2{
