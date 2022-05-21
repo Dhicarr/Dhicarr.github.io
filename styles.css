@@ -14,6 +14,8 @@ html {
     position:relative;
     overflow-x:hidden;
 }
+a:visited {color:rgb(116, 116, 116);}
+a:hover {color:rgb(62, 62, 62);}
 #name{
     width: 500px;
     height: 250px;
