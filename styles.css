@@ -14,6 +14,10 @@ html {
     position:relative;
     overflow-x:hidden;
 }
+.fakestore_img{
+    width: 20em;
+    height:10em;
+}
 a:visited {color:rgb(116, 116, 116);}
 a:hover {color:rgb(62, 62, 62);}
 #name{
@@ -260,7 +264,8 @@ nav>ul>li a:hover{
     font-size: 2em;
     text-decoration: none;
 }
-#sqlproject, #tankwebsite, #weatherapp, #personalwebsite, #studentprofile, #hatchways{
+#sqlproject, #tankwebsite, #weatherapp,
+#personalwebsite, #studentprofile, #hatchways, #fakestore{
     border-bottom: 5px solid rgb(165, 165, 165);
     padding-top: 1em;
     padding-bottom: 1em;
@@ -406,7 +411,8 @@ nav>ul>li a:hover{
         margin-bottom: 1em;
         outline-style: none;
     }
-    #sqlproject, #tankwebsite, #copit, #personalwebsite, #weatherapp, #studentprofile, #hatchways{
+    #sqlproject, #tankwebsite, #copit, #personalwebsite,
+    #weatherapp, #studentprofile, #hatchways, #fakestore{
         font-size: 0.4em;
     }
     #extra,#extra_projects2{
