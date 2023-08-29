@@ -18,6 +18,19 @@ html {
     width: 20em;
     height:10em;
 }
+.mobile_slideshow{
+    width: 10em;
+    height: 20em;
+    border: solid 3px rgb(116, 116, 116);
+    border-radius: 1em;
+}
+.desktop_slideshow{
+    width: 20em;
+    height: 10em;
+    border: solid 3px rgb(116, 116, 116);
+    border-radius: 1em;
+    margin-bottom:1em;
+}
 a:visited {color:rgb(116, 116, 116);}
 a:hover {color:rgb(62, 62, 62);}
 #name{
@@ -335,6 +348,9 @@ nav>ul>li a:hover{
     border: 5px solid rgb(255, 255, 255);
     border-radius: 1em;
 }
+.experience_tab{
+    font-size: 24px;
+}
 .slideshow2>img:nth-child(1){-webkit-animation-delay:0s;}
 .slideshow2>img:nth-child(1){animation-delay:0s;}
 .slideshow2>img:nth-child(2){-webkit-animation-delay:3s;}
@@ -404,6 +420,35 @@ nav>ul>li a:hover{
     50%  { transform: translateY(-20px); }
     100% { transform: translateY(0); }
 }
+
+@media only screen and (max-width : 800px){
+    #skills_content{
+        padding: 0em;
+        margin-bottom: 1em;
+        outline-style: none;
+    }
+    #skills{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #skill5>img{
+        width:15vw;
+        height:17vw;
+    }
+    #skill8>img{
+        width:15vw;
+        height:19vw;
+    }
+    #skill7>img{
+        width:20vw;
+        height:15vw;
+    }
+    #languages>*>img{
+        width:15vw;
+        height:15vw;
+    }
+}
+
 /*For Phones*/
 @media only screen and (max-width : 500px){
     body{
@@ -418,11 +463,6 @@ nav>ul>li a:hover{
         width:31em;
         height:20em;
     }
-    #skills_content{
-        padding: 0em;
-        margin-bottom: 1em;
-        outline-style: none;
-    }
     #sqlproject, #tankwebsite, #copit, #personalwebsite,
     #weatherapp, #studentprofile, #hatchways, #fakestore{
         font-size: 0.4em;
@@ -432,10 +472,6 @@ nav>ul>li a:hover{
     }
     #about2{
         display:block;
-    }
-    #skills{
-        padding-left: 10%;
-        padding-right: 10%;
     }
     #about{
         padding-left: 10%;
@@ -448,22 +484,6 @@ nav>ul>li a:hover{
     #languages{
         grid-template-columns: repeat(auto-fit, minmax(15vw, auto));
         gap: 2vw;
-    }
-    #languages>*>img{
-        width:15vw;
-        height:15vw;
-    }
-    #skill5>img{
-        width:15vw;
-        height:17vw;
-    }
-    #skill8>img{
-        width:15vw;
-        height:19vw;
-    }
-    #skill7>img{
-        width:20vw;
-        height:15vw;
     }
     #nameclass{
         height: 45vw;
@@ -509,6 +529,28 @@ nav>ul>li a:hover{
     p{
         font-size:4vw;
     }
+    .desktop_slideshow{
+        width: 13em;
+        height:6.5em;
+        display:flex;
+        justify-content: center;
+        margin:auto;
+    }
+    .mobile_slideshow{
+        width: 13em;
+        height:25em;
+        display:flex;
+        justify-content: center;
+        margin:auto;
+    }
+    #headphoto{
+        display: flex;
+        justify-content: center;
+        margin-right:0;
+    }
+    .experience_tab{
+        font-size: 5vw;
+    }
 }
 @media only screen and (min-width : 501px) and (max-width : 800px){
     #images{
@@ -525,5 +567,24 @@ nav>ul>li a:hover{
     }
     #extra,#extra_projects2{
         font-size: 2vw;
+    }
+    .desktop_slideshow{
+        width: 15em;
+        height:7.5em;
+        display:flex;
+        justify-content: center;
+        margin:auto;
+    }
+    .mobile_slideshow{
+        width: 10em;
+        height:20em;
+        display:flex;
+        justify-content: center;
+        margin:auto;
+    }
+    #headphoto{
+        display: flex;
+        justify-content: center;
+        margin-right:0;
     }
 }
